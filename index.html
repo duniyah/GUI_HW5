@@ -1,0 +1,96 @@
+<!-- 
+File: index.html 
+GUI Assignment:  Implementing One Line of Scrabble
+Dunia Seidu, UMass Lowell Computer Science Student, dunia_seidu@student.uml.edu 
+Copyright (c) 2021.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated on December 18, 2021 
+--> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Scrabble Assignment</title>
+     <!-- encode website for modern browsers-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--local CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    </head>
+
+<body>
+    <!--header div-->
+<div class="container">
+    <h1>Implementing One-Line Scrabble</h1>
+    </div>
+    </div>
+
+
+    <!--
+        This div holds the new tile and score
+            -New tiles will dump the whole hand and get new tiles from the distribution but does not return the tiles to the pile
+            -Score is updated everytime a tile is dragged or dropped.
+    -->
+    <div class="container">
+        <div id="button_div">
+            <h4>Score: <span id="score_id">0</span></h4>
+
+            <button onclick="generateTiles()" id="new_tile_btn">Generate New Tiles</button>
+
+            <button onclick="reset()" id="resetButton">Reset Game</button>
+
+        </div>
+
+
+
+    <!-- one line board. I implemented this using an html table and inserted images provided in the assigment
+
+    -->
+    <div class="container" id="board">
+        <table>
+            <tr>
+                <td> <img id="1" class="tile_on_board" title="doubleLetter" src="img/double_letter.jpg"></td>
+                <td> <img id="2" class="tile_on_board" title="blank" src="img/Scrabble_Tile_Blank.jpg"></td>
+                <td> <img id="3" class="tile_on_board" title="blank" src="img/Scrabble_Tile_Blank.jpg"></td>
+                <td> <img id="4" class="tile_on_board" title="tripleLetter" src="img/triple_letter.jpg"></td>
+                <td><img id="5" class="tile_on_board" title="blank" src="img/Scrabble_Tile_Blank.jpg"></td>
+                <td><img id="6" class="tile_on_board" title="blank" src="img/Scrabble_Tile_Blank.jpg"></td>
+                <td><img id="7" class="tile_on_board" title="blank" src="img/Scrabble_Tile_Blank.jpg"></td>
+                <td><img id="8" class="tile_on_board" title="blank" src="img/Scrabble_Tile_Blank.jpg"></td>
+            </tr>
+        </table>
+    </div>
+
+<!-- div for scrabble tile holder-->
+    <div class="container" id="tile_holder_div">
+        <img id="tile_holder" src="img/scrabble-tile-holder-406774_640.png">
+    </div>
+
+
+
+</div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css">
+
+    <!--local JS file -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

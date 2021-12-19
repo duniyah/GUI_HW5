@@ -1,0 +1,54 @@
+/* 
+File: style.css
+GUI Assignment: Implementing One Line of Scrabble
+Dunia Seidu, UMass Lowell Computer Science Student, dunia_seidu@student.uml.edu 
+Copyright (c) 2021.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated on December 18, 2021 
+*/
+
+.single_tile {
+    margin-right: 20px;
+    width:128px;
+    height:128px;
+
+}
+
+.tile_on_board {
+    width:128px;
+    height:128px;
+}
+
+#tile_holder {
+    width:1140px;
+    height:240px;
+}
+
+#tile_holder_div {
+    position: relative;
+}
+
+#player_tile_holder {
+    position: absolute;
+    bottom: 45px;
+    left: 75px;
+}
+
+img {
+    margin-left:5px;
+    margin-right:5px;
+}
+
+#board {
+    padding: 20px;
+    margin-left: 10px;
+
+}
+
+
+table#remainingTiles td, table#remainingTiles tr  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    border-spacing: 20px;
+}
